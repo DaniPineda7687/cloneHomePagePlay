@@ -1,0 +1,124 @@
+.shop__products{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.shop__products__header{
+    text-align: center;
+    padding: 2rem 4rem;
+    h2{
+        font-size: 2.5rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.8rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+}
+.shop__product__card{
+    display: grid;
+    max-width: 500px;
+    grid-template-rows: 200px 220px;
+    margin: 0 20px;
+    .header__product__card{
+        justify-self: center;
+        figure,img{
+            height: 100%;
+        }
+        img{
+            object-fit: cover;
+        }
+    }
+    .description__product__card{
+        h2{
+            font-size: 2.5rem;
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.6rem;
+            font-weight: 200;
+        }
+        .main__button{
+            margin:20px 0;
+        }
+    }
+}
+
+#shop__products{
+    .splide__pagination li button.is-active{
+        background-color: #0070cc;
+    }
+    .splide__arrow{
+        background-color: #0070cc;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.dicounts__container{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .discounts__header{
+        margin-bottom: 40px;
+        img{
+            border-radius: 20px;
+        }
+    }
+
+    .discounts__content{
+        svg{
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+        h2{
+            font-size: 2.5rem;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+        p{
+            padding: 0 5rem 0 0;
+            font-size: 1.4rem;
+            font-weight: 200;
+        }
+        .main__button{
+            background-color: #d53b00;
+            margin: 20px 0;
+        }
+    }
+}
+@media screen and (min-width:768px) {
+    .dicounts__container{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .discounts__header{
+        order: 1;
+        align-self: center;
+        img{
+            transition: transform .3s;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scale(1.02);
+        }
+    }
+    .discounts__content{
+        align-self: center;
+    }
+}
+@media screen and (min-width:1200px) {
+    .shop__products__content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #shop__products-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

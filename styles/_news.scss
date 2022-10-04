@@ -1,0 +1,99 @@
+.news__section{
+    margin: 40px 0;
+    h2{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin-bottom: 40px;
+    }
+}
+.new__card__container{
+    max-width: 768px;
+    margin-bottom: 30px;
+    margin: 0 20px 30px 20px;
+    box-shadow: 3px 12px 13px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: box-shadow .2s;
+    display: grid;
+    grid-template-rows: max-content 280px;
+}
+.new__card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new__card__header img{
+    transition: box-shadow .2s;
+}
+.new__card__container:hover{
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
+    .new__card__header img{
+        box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.4);
+    }
+}
+.new__card__header{
+    margin-bottom: 10px;
+    img{
+        border-radius: 10px;
+        box-shadow: 3px 12px 8px -3px rgba(0,0,0,0.1);
+        box-shadow: 3px 19px 13px -6px rgba(0,0,0,0.1);
+
+    }
+}
+.new__card__content{
+    padding: 1rem 1rem 2rem 1rem;
+    .new__card--title{
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+    .new__card--p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+.new__card__footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+        max-width: 50px;
+    }
+    .new--author{
+        font-weight: bolder;
+    }
+    .new--work{
+
+    }
+    .new--date{
+        font-weight: 100;
+    }
+}
+.splide__pagination__page.is-active{
+    background-color: #0070cc;
+}
+.news__section{
+    .splide__arrow{
+        background-color: #0070cc;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:500px) {
+    .new__card__container{
+        grid-template-rows: max-content 200px;
+    }
+}
+@media screen and (min-width:768px) {
+    .new__card__container{
+        grid-template-rows: max-content 280px;
+    }
+}
+@media screen and (min-width:1340px) {
+    .new__card__container{
+        grid-template-rows: max-content 200px;
+    }
+}

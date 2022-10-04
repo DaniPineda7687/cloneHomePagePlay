@@ -1,0 +1,106 @@
+.products__container{
+    margin-top: 6rem;
+}
+.product__card__container{
+    display: grid;
+    padding: 0rem 2rem;
+    text-align: center;
+}
+.product__card_header{
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.product__card__footer{
+    margin-bottom: 30px;
+    .product__card__title{
+        font-size: 1.8rem;
+        color: #1F1F1F;
+        margin-bottom: 15px;
+        h2{
+            font-weight: 100;
+        }
+
+    }
+    .product__card__description{
+        font-weight: lighter;
+        font-size: 1.6rem;
+        color: #1F1F1F;
+    }
+}
+.primary__button{
+    background-color: #0064B7;
+    margin-top: 20px;
+    a{
+        color: #ffffff;
+    }
+}
+.products__list__container{
+    gap: 10px;
+}
+.products__control{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    max-width: 50%;
+    padding:1.5rem 0rem;
+    img{
+        width: 50%;
+        border-radius: 10px;
+    }
+    p{
+        margin-top:10px;
+        font-size: 1.5rem;
+        color: #3F3F3F;
+    }
+}
+.products__control:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.products__control.is-active{
+    opacity: 1;
+    border-radius: 10px;
+    border: 2px solid #0072CE;
+}
+.products__control__container{
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .product__control__active{
+        opacity: 1;
+        border-radius: 10px;
+        border: 2px solid #0072CE;
+    }
+    .product__card__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        align-items: center;
+        text-align: left;
+        width: 80%;
+        margin: 0 auto 4rem auto;
+        gap: 20px;
+    }
+    .product__card_header{
+        order: 1;
+    }
+    .products__control{
+        max-width: 15%;
+    }
+    .products__list__container{
+        display: flex !important;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.product__card--disabled{
+    display: none;
+}

@@ -1,0 +1,136 @@
+.promotion__container{
+    display: grid;
+    grid-template-rows: 500px max-content;
+}
+.promotion__background,
+.promotion__content{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.promotion__card__header{
+    transition: all .3s;
+}
+.promotion__card__header:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.promotion__background{
+    figure{
+        height: 100%;
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.promotion__content{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    figure{
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 30px;
+    }
+}
+.second__promotion{
+    grid-template-rows: 300px auto;
+    background-color: #252550;
+}
+.second__promotion__background{
+    img{
+        height: auto;
+        object-fit: contain;
+    }
+}
+.second__promotion__content{
+    color: #ffffff;
+    grid-row: 2 / 3;
+    .second__promotion--description{
+        margin-bottom: 40px;
+    }
+    .second__promotion--title{
+        p{
+            font-size: 2.8rem;
+        }
+    }
+    .second__promotion--description{
+        font-weight: 100;
+    }
+    img{
+        border-radius: 10px;
+        box-shadow: 0 .6rem 1rem 0 #000000;
+    }
+}
+.second__button{
+    background-color: #ffffff;
+    a{
+        color: #000000;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .banner__description--btn{
+        margin: 20px 0;
+    }
+    .second__promotion--description{
+        width: 50%;
+    }
+    .promotion__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh;
+    }
+    .promotion__background{
+        img{
+            width: 100vw;
+        }
+    }
+    .promotion__content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        text-align: left;
+        img{
+            max-width: 20vw;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    .promotion__main__content{
+        order: -1;
+    }
+    .promotion__background,
+    .promotion__content{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .second__promotion{
+        grid-template-rows: max-content;
+    }
+    .second__promotion__background,
+    .second__promotion__content{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2; 
+    }
+    .second__promotion__content{
+        display: block;
+    }
+    .second__promotion--cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .promotion__card{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

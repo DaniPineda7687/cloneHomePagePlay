@@ -1,0 +1,198 @@
+.social__links__container{
+    background-color: #f5f7fa;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 2rem;
+    padding-bottom: 40px;
+    h2{
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+}
+.links__container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div{
+        font-size: 30vw;
+        color: #393939;
+        transition: transform .2s;
+    }
+    div:hover{
+        transform: scale(1.03);
+    }
+}
+
+.other__links{
+    background-color: #00439c;
+    padding: 2rem 2rem;
+}
+.other__links__content{
+    .main__link__content .active__link__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(222, 222, 222);
+        i{
+            font-size: 2rem;
+            color: #ffffff;
+        }
+    }
+    hr{
+        color: #393939;
+    }
+    .main__link__content .active__link__footer a{
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+    .footer__item ul li a{
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .footer__item{
+        position: relative;
+        overflow: hidden;
+        margin: 0 0 2rem 0;
+    }
+    .footer__subitem.subitem__hidden{
+        position: absolute;
+        transition: all .2s;
+        
+    }
+    .footer__subitem li{
+        padding: .2rem 0;
+    }
+}
+.icon__footer{
+    transition: all .4s;
+}
+.active__link__footer.is-clicked .icon__footer{
+    transform: rotate(45deg);
+}
+.classification__section{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 20px;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(222, 222, 222);
+}
+.classification__content__2{
+    img{
+        max-width: 40px;
+    }
+}
+.classification__content__1{
+    figure{
+        max-width: 200px;
+    }
+    p{
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+}
+.country{
+    margin: 10px 0;
+    span{
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 100;
+        i{
+            padding-right: .8rem;
+        }
+    }
+}
+.terms{
+    ul{
+        display: flex;
+    }
+    ul li{
+        border-right: 1px solid rgb(222, 222, 222);
+        padding-right: 10px;
+        padding-left: .4rem;
+    }
+    ul li a{
+        color: #ffffff;
+    }
+}
+.footer__logo__sony{
+    background-color: #000000;
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    img{
+        width: 100px;
+    }
+}
+.footer__subitem__social{
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+    div i{
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+}
+@media screen and (min-width:700px){
+    .footer__logo__sony{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .other__links{
+        padding: 2rem 4rem;
+    }
+    .main__link__content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 20px;
+        row-gap: 60px;
+        .footer__item{
+            position: static;
+            overflow: auto;
+            margin: 0;
+
+            .active__link__footer{
+                border: none;
+                margin-bottom: 10px;
+            }
+            .active__link__footer i{
+                display: none;  
+            }
+
+            .footer__subitem{
+                position: static;
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .classification__section{
+        padding-top: 10px;
+        border-top: 1px solid rgb(222, 222, 222);
+    }
+}
+@media screen and (min-width:950px) {
+    .links__container{
+        width: 50%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4,1fr);
+        div{
+            font-size: 8rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .main__link__content{
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 20px;
+    }
+}

@@ -1,0 +1,85 @@
+.shop__clothes__section{
+    display: grid;
+
+}
+.shop__clothes__background{
+    figure,img{
+        height: 100%;
+    }
+    img{
+        object-fit: cover;  
+    }
+}
+.shop__clothes__background,
+.shop__clothes__content{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.shop__clothes__content{
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    color: #ffffff;
+}
+.shop__clothes__content__header{
+    img{
+        max-width: 80px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 60px;
+    }
+}
+
+.shop__clothes__card{
+    background-color: rgba(0, 0, 0, 0.628);
+    padding: 2rem 0;
+    margin-bottom: 40px;
+    .shop__clothes__card__header{
+        margin-bottom: 20px;
+    }
+    .shop__clothes__card__content{
+        text-align: center;
+        p{
+            font-size: 1.6rem;
+            margin-bottom: 40px;
+            font-weight: 200;
+        }
+        .main__button{
+            background-color: #d53b00;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .shop__clothes__content{
+        max-width: 80%;
+        .main__button{
+            margin: 40px auto;
+        }
+    }
+    .shop__clothes__card{
+        margin: 0;
+        .main__button{
+            margin: 0 auto;
+        }
+    }
+    .shop__clothes__content__products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .shop__clothes__content__products{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}

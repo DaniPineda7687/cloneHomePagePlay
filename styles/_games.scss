@@ -1,0 +1,197 @@
+.primary__game{
+    display: grid;
+    grid-template-rows: 80vh max-content;
+}
+.primary__game__background{
+    figure,img{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        object-fit: cover;
+    }
+}
+.primary__game__background,
+.primary__game__content{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.primary__game__content{
+    text-align: center;
+    justify-self: center;
+    align-self: end;
+    padding: 0 0 2rem 0 ;
+}
+.primary__game__header{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+.primary__game__description{
+    color: #ffffff;
+    h3{
+        font-size: 2.8rem;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 20px;
+    }
+    
+}
+.section__new__games{
+    margin-bottom: 40px;
+}
+.section__games{
+    background-color: #000000;
+    padding: 2rem .8rem;
+}
+.games__container{
+    display: grid;
+    padding: 2rem .8rem 5rem .8rem;
+    column-gap: 10px;
+    row-gap: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(2,45vw);
+    grid-template-rows: repeat(2,45vw);
+}
+.splide__pagination__page{
+    width: 15px;
+    height: 2px;
+    border-radius: 0;
+    transform: none;
+    transition: none;
+}
+.header__games{
+    color: #ffffff;
+    margin-bottom: 10px;
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+}
+.game__card__img{
+    height: 90%;
+    img,figure{
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+.game__card__description{
+    color: #ffffff;
+    font-size: 1.5rem;
+    
+}
+.controls-visible{
+    display: none;
+}
+
+@media screen and (min-width:769px){
+    .d-none{
+        display: none;
+    }
+    .controls-visible{
+        display: block;
+    }
+    .games__controls{
+        width: 80%;
+        text-align: right;
+        font-size: 2.8rem;
+        margin: 0 auto;
+        cursor: pointer;
+        a{
+            color: #ffffff;
+        }
+    }
+    .primary__game .main__button{
+        margin: 0 auto;
+    }
+    .primary__game__description{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .header__games{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .games__container{
+        display: block;
+    }
+    .main__games__container{
+        width: 80%;
+        display: grid !important;
+        margin: 0 auto !important;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,max-content);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    #games-slide01{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #games-slide02{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    #games-slide03,#games__coming-slide03{
+        grid-column: 1 / 3;
+        .games__container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: none;   
+        }
+    }
+    .games__container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,25vw);
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .primary__game{
+        grid-template-columns: 1fr 1fr;
+    }
+    .primary__game__background,
+    .primary__game__content{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .primary__game__content{
+        grid-column: 1 / 2;
+    }
+    .primary__game__header{
+        img{
+            margin: 0 auto;
+            max-width: 500px;
+        }
+    }
+    .main__games__container{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .games__container{
+        grid-template-rows: repeat(2,250px);
+    }
+    #games-slide03,#games__coming-slide03{
+        grid-column: 3 / 4;
+        .games__container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,250px);   
+        }
+    }
+}

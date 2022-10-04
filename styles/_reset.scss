@@ -1,0 +1,61 @@
+@font-face {
+    font-family:'sst';
+    src: url('/assets/font/SSTRg.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family:'sst';
+    src: url('/assets/font/SSTMedium.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:'sst';
+    src: url('/assets/font/SSTBold.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family:'sst';
+    src: url('/assets/font/SSTHeavy.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+    font-family:'sst';
+    src: url('/assets/font/SSTLight.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:active{
+    color: #000000;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    font-family:sst, monospace;
+    font-size: 62.5%;
+}
+
+.main__section{
+    max-width: 1400px;
+    margin: 0 auto;
+}
